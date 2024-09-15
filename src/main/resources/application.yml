@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: card-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/card_service_db
+    username: postgres
+    password: root123
+  jpa:
+    properties:
+      hibernate:
+        dialect:
+          org:
+            hibernate:
+              dialect: PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+cbu:
+  api:
+    url: https://cbu.uz/ru
+
+#logging:
+#  level:
+#    org:
+#      springframework: INFO
+#    com:
+#      example: DEBUG
